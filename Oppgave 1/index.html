@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 1</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<form action="/submit" method="post">
+    <h2>Registration Form</h2>
+
+    <label for="firstname">First name</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+    
+    <label for="lastname">Last name</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="date">Date of birth</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option value="man">Man</option>
+        <option value="woman">Woman</option>
+        <option value="other">Other</option>
+    </select>
+
+    <button type="submit">Create Account</button>
+</form>
+    
+</body>
+</html>

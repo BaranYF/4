@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oppgave 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img class="fbimg" src="assets/Gabriel Jesus.jpg" alt="Gabriel Jesus">
+            <div class="text">Gabriel Jesus #9</div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+            <img class="fbimg" src="assets/Bukayo Saka.jpg" alt="Bukayo Saka">
+            <div class="text">Bukayo Saka #7</div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img class="fbimg" src="assets/Gabriel Martinelli.jpg" alt="Gabriel Martinelli">
+            <div class="text">Gabriel Martinelli #11</div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="nextSlide(-1)">❮</a>
+        <a class="next" onclick="nextSlide(1)">❯</a>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="dotbar">
+        <span class="dot" onclick="jumpToSlide(1)"></span>
+        <span class="dot" onclick="jumpToSlide(2)"></span>
+        <span class="dot" onclick="jumpToSlide(3)"></span>
+    </div>
+</body>
+</html>

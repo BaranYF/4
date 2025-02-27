@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Design System</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>1. Buttons</h2>
+            <button class="btn">Click Me</button><button class="btn">Blue</button>
+        </div>
+
+        <div class="box">
+            <h2>2. Input</h2>
+            <input class="input" placeholder="Type something...">
+        </div>
+
+        <div class="box">
+            <h2>3. Card</h2>
+            <div class="card"><h3>Card</h3><p>Simple card with text.</p></div>
+        </div>
+
+        <div class="box">
+            <h2>4. List</h2>
+            <ul class="list">
+                <li><input type="checkbox">Item 1</li>
+                <li><input type="checkbox">Item 2</li>
+                <li><input type="checkbox">Item 3</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>5. Alert</h2>
+            <div class="alert">Click to dismiss!</div>
+        </div>
+
+        <div class="box">
+            <h2>6. Calendar</h2>
+            <div class="calendar">
+                <input type="number" id="d" min="1" max="31">
+                <select id="m">
+                    <option value="0">Jan</option><option value="1">Feb</option>
+                    <option value="2">Mar</option><option value="3">Apr</option>
+                    <option value="4">May</option><option value="5">Jun</option>
+                    <option value="6">Jul</option><option value="7">Aug</option>
+                    <option value="8">Sep</option><option value="9">Oct</option>
+                    <option value="10">Nov</option><option value="11">Dec</option>
+                </select>
+                <input type="number" id="y" min="1900" max="2100">
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>7. Nav</h2>
+            <nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav>
+        </div>
+
+        <div class="box">
+            <h2>8. Toggle</h2>
+            <div class="switch">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="slider"></label>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>9. Scroll</h2>
+            <div class="scroll"><button>↑</button><button>↓</button></div>
+        </div>
+
+        <div class="box">
+            <h2>10. Popup</h2>
+            <button class="btn" id="open">Open</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Popup</h3>
+            <p>Hello! This is a pop up window.</p>
+            <button class="btn" id="close">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

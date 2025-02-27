@@ -1,0 +1,213 @@
+/* Colors and Reset */
+:root {
+    --b: #007bff;
+    --d: #333;
+    --g: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Arial;
+    padding: 20px;
+    color: var(--d);
+    background: #f8f9fa;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0002;
+}
+
+/* Buttons */
+.btn {
+    background: var(--d);
+    color: #fff;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--b);
+}
+
+/* Input */
+.input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 2px solid var(--g);
+    border-radius: 4px;
+}
+
+/* Card */
+.card {
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #0002;
+}
+
+/* List */
+.list {
+    list-style: none;
+}
+
+.list li {
+    padding: 8px;
+    margin-bottom: 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Alert */
+.alert {
+    background: var(--b);
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: var(--d);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--b);
+}
+
+/* Toggle */
+.switch {
+    width: 50px;
+    height: 26px;
+    position: relative;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--g);
+    border-radius: 34px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+input:checked + .slider {
+    background: var(--b);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Calendar */
+.calendar {
+    display: flex;
+    gap: 8px;
+}
+
+.calendar input,
+.calendar select {
+    padding: 6px;
+    border: 1px solid var(--g);
+    border-radius: 4px;
+}
+
+#d { width: 60px; }
+#m { width: 100px; }
+#y { width: 80px; }
+
+/* Scroll buttons */
+.scroll {
+    display: flex;
+    gap: 10px;
+}
+
+.scroll button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--d);
+    color: #fff;
+    cursor: pointer;
+}
+
+.scroll button:hover {
+    background: var(--b);
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+}
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
